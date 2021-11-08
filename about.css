@@ -1,0 +1,26 @@
+@import 'style.css';
+.about-BU ,.vission ,.mission{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding: 2em;
+     /* margin: 2rem; */
+}
+.history-text , .vission-text ,.mission-text{
+     display: flexbox;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+}
+.history-text h1 , .vission-text h1, .mission-text h1{
+     font-family: 'Roboto Condensed', sans-serif;
+     color: #001E6C;
+     padding: 4rem;    
+}
+.history-text p , .vission-text ul,.mission-text ul{
+     font-family: 'Montserrat Alternates' ,sans-serif;
+     line-height: 2rem;
+     margin: 2rem;
+}

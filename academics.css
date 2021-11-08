@@ -1,0 +1,54 @@
+@import 'style.css';
+
+.syllabus , .time-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem;
+}
+.syll-text , .time-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}    
+.syll-text ul , .time-text ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    font-family: 'Montserrat Alternates',sans-serif;
+}
+.syll-text li , .time-text li{
+    margin: 2rem;
+    color: black;
+}
+.other h2, .syll-text h1 , .time-text h1{
+    color: #001E6C;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 2rem;
+}
+.other{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.dress ,.prev ,.Faculty ,.scholar{
+    padding: 2rem;
+}
+.dress a ,.prev a ,.Faculty a ,.scholar a,.time-table a ,.syllabus a{
+    text-decoration: none;
+}
+.scholar img{
+    width: 55%;
+    
+}
+@media screen and (max-width:1130px){
+    .syllabus ,.time-table, .other{
+        display: flex;
+        flex-direction: column;
+    }
+}

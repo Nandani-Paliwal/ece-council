@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+.sem-h{
+     font-family: 'Roboto Condensed' , sans-serif;
+     color: #001E6C;
+     display: flex;
+     flex-direction: auto;
+     align-items: center;
+     justify-content: center;
+     padding-top: 4rem;
+}
+.sem{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.chemis a , .electronics a ,.electrical a, .manufacturing a, .maths a, .phy a{
+    text-decoration: none;
+    padding: 2rem;
+    font-family: 'Montserrat Alternates' , sans-serif;
+    color: black;
+}
+.electronics , .chemis{
+    padding: 4rem;
+    
+
+}

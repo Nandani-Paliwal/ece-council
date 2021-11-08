@@ -1,0 +1,169 @@
+@import 'style.css';
+@import url('https://fonts.googleapis.com/css2?family=Metal&family=Montserrat+Alternates:wght@300&family=Poppins:wght@200&display=swap');
+
+
+.facility{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hostel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hh{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hh h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #001E6C;
+    padding: 1.5rem;
+}
+.hostel-G, .hostel-B{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.text h2{
+    font-family: 'Metal',  cursive;
+    padding-left: 2rem;
+}
+.text p{
+    font-family: 'Montserrat Alternates',sans-serif;
+    color: black;
+    line-height: 1.5rem;
+    padding: 2rem;
+}
+.img{
+    padding:2rem;
+}
+.other a{
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#001E6C;
+    /* padding:3rem; */
+    
+}
+.other{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5rem;
+    
+}
+.lab-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    gap: 3rem;
+    column-gap: 6rem;
+    margin: 3rem;
+}
+.lab-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    border: 2px black;
+    padding: 0rem 1rem;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px 2px;
+}
+.lab-content{
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: var(--sec);
+}
+.card-content{
+    text-align: center;
+    margin-top: -4rem;
+    color: black;
+}
+.upper-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #035397;
+    height: 25rem;
+    border-radius: 1rem;
+    z-index: 2;
+    transition: 0.3s;
+}
+.upper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upper-content img{
+    padding: 3rem;
+}
+.lab-card-container:hover .upper-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 4rem;
+    cursor: pointer;
+    animation: upper-content 0.5s linear 0s 1;
+    animation-fill-mode: forwards;
+    transition: upper-content 0.5s linear ease-in;
+}
+.lab-card-container:hover .upper-div img{
+    animation: imgtransform 0.5s linear 0s 1;
+    animation-fill-mode: forwards;
+    transition: imgtransform 0.5s linear ease-in;
+}
+.lab-card-container:hover .upper-div h3{
+    animation: labname 0.5s linear 0s 1;
+    animation-fill-mode: forwards;
+    transition: labname 0.5s linear ease-in;
+}
+@keyframes upper-content{
+    from{
+    transform : translateY(0%);
+    border-radius: 2rem;
+    transform-origin:bottom;
+   }
+   to{
+    transform: translateY(100%);
+    border-radius: 2rem;
+    transform-origin:bottom;
+    /* position: absolute;
+    top: 0rem;
+    bottom: 3rem; */
+   } 
+}
+@keyframes imgtransform{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes labname{
+    from{
+        border-radius: 1rem;
+
+    }
+    to{
+        position: absolute;
+        bottom: 1.5rem;
+    }
+}
+
