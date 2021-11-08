@@ -7,6 +7,9 @@
   justify-content: center;
   align-items: center;
 }
+
+/* HOSTEL CSS */
+
 .hostel {
   display: flex;
   flex-direction: column;
@@ -23,9 +26,9 @@
   font-family: "Roboto Condensed", sans-serif;
   color: #001e6c;
   padding: 1.5rem;
+  font-size: 2.7rem;
 }
-.hostel-G,
-.hostel-B {
+.hostel-G,.hostel-B {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -54,6 +57,22 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 5rem;
+}
+
+/* LABORATORIES CSS */
+
+.lab-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lh{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #001e6c;
+  padding: 2rem;
+  font-size: 1.5rem;
+
 }
 .lab-cards-grid {
   display: grid;
@@ -86,6 +105,10 @@
   margin-top: -4rem;
   color: black;
 }
+.card-content p{
+  font-family: 'Montserrat Alternates',sans-serif;
+  line-height: 1.7rem;
+}
 .upper-div {
   display: flex;
   justify-content: center;
@@ -106,6 +129,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.upper-content h3{
+  font-family: 'metal',cursive;
+  color: #001e6c;
+  font-size: 1.9em;
 }
 .upper-content img {
   padding: 3rem;
@@ -156,6 +184,18 @@
   }
   to {
     position: absolute;
-    bottom: 1.5rem;
+    top: 1.8rem;
+  }
+}
+@media screen and (max-width:950px){
+  .lab-cards-grid{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width:635px){
+  .lab-cards-grid{
+    display:grid;
+    grid-template-columns: auto ;
   }
 }
