@@ -1,1 +1,93 @@
 @import 'style.css';
+@import url("https://fonts.googleapis.com/css2?family=Metal&family=Montserrat+Alternates:wght@300&family=Poppins:wght@200&display=swap");
+.alumini{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+}
+.head{
+    padding: 3rem;
+    color: #001e6c;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+.box-e{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    /* position: relative; */
+    width: 45rem;
+    height: 10rem;
+    /* top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left:8em; */
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: #001e6c  2px 2px 2px 2px;
+    border-radius: 2rem;
+}
+.box-ee{
+    padding-left: 0rem;
+}
+.box-oo{
+    padding-left: 19rem;
+}
+.box-o{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    /* position: relative; */
+    width: 45rem;
+    height: 10rem;
+    /* top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: 20em; */
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: #001e6c  2px 2px 2px 2px;
+    border-radius: 2rem;
+}
+.box img{
+    padding: 1rem 2rem ;
+}
+.text h2{
+    color: #FFAA4C;
+    font-family:'metal', cursive ;
+}
+.text h3{
+    color:#001e6c ;
+    font-family: 'poppins',sans-serif;
+    line-height: 1.5rem;
+}
+.mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2em auto; */
+    /* margin: 2rem; */
+}
+@media screen and (max-width:1130px){
+    body{
+        overflow-x: hidden;
+    }
+    .alumini{
+        display: flex;
+        flex-direction: column;
+    }
+    .review ,{
+        display: flex: ;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%;     */
+    }
+    .box-ee,.box-oo{
+        padding-left: auto auto;
+    }
+}
