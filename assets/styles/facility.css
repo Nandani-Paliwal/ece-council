@@ -144,9 +144,9 @@
   align-items: center;
   position: absolute;
   cursor: pointer;
-  animation: upper-content 0.5s linear 0s 1;
+  animation: upper-content 0.2s linear 0s 1;
   animation-fill-mode: forwards;
-  transition: upper-content 0.5s linear ease-in;
+  transition: upper-content 0.2s linear ease-in;
 }
 .lab-card-container:hover .upper-div img {
   animation: imgtransform 0.5s linear 0s 1;
@@ -154,9 +154,9 @@
   transition: imgtransform 0.5s linear ease-in;
 }
 .lab-card-container:hover .upper-div h3 {
-  animation: labname 0.5s linear 0s 1;
+  animation: labname 0.2s linear 0s 1;
   animation-fill-mode: forwards;
-  transition: labname 0.5s linear ease-in;
+  transition: labname 0.2s linear ease-in;
 }
 @keyframes upper-content {
   from {
