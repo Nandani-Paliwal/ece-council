@@ -39,7 +39,17 @@
     grid-template-columns: auto auto auto;
     grid-column-gap: 2rem;
 }
-.socials{
-    
-
-}
+@media screen and (max-width:950px){
+    .council-box{
+      display:grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 2rem;
+    }
+  }
+  @media screen and (max-width:635px){
+    .council-box{
+      display:grid;
+      grid-template-columns: auto ;
+      grid-column-gap: 2rem;
+    }
+  }
