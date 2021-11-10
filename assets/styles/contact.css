@@ -1,0 +1,36 @@
+@import 'style.css';
+h1{
+    color: #001E6C;
+    font-family: 'Roboto Condensed',sans-serif;
+    padding:1.7rem;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline;
+    padding: 2rem;
+}
+.contact h2{
+    color: #FFAA4C;
+    font-family:'Roboto Condensed',sans-serif ;
+    padding-left: 5rem;
+}
+.contact h3{
+    color:#035397;
+    font-family: 'metal',cursive;
+    padding: 1.4rem 9rem;
+}
+.phone ,.mail{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-top: 1.4rem;
+}
+.phone h4,.mail a{
+    color: #035397;
+    font-family: 'metal',sans-serif;
+    text-decoration: none;
+    padding-left: 1.2em;
+    
+}
