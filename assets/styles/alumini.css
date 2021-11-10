@@ -50,6 +50,9 @@
     line-height: 1.5rem;
 }
 @media screen and (max-width:1130px){
+    body{
+        overflow-x: hidden;
+    }
     .alumini{
         display: flex;
         flex-direction: column;
