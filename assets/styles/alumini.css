@@ -67,5 +67,6 @@
     }
     .box-o,.box-e{
         width: auto;
+        margin: auto;
     }
 }
