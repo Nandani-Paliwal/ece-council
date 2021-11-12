@@ -24,3 +24,6 @@
      line-height: 2rem;
      margin: 2rem;
 }
+.history-img, .mission-img, .vission-img{
+     background: transparent;
+}
