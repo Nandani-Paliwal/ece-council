@@ -13,6 +13,7 @@
 body {
     max-width: 90vw;
     margin: auto;
+    /* overflow-x: hidden; */
 }
 
 
@@ -92,15 +93,16 @@ body {
 }
 .carousel-img{
     width: 100%;
-    height: 25rem;
+    height: 20rem;
     object-fit: cover;
 }
 .carousel_track-container{
     /* background-color: lightgreen; */
     padding: 10px;
-    height: 100%;
+    height: 80%;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 .carousel_track{
     padding: 0em;
@@ -108,12 +110,13 @@ body {
     list-style: none;
     position: relative;
     height: 100%;
-    transition: transform 250ms ease-in;
+    transition: transform 100ms ease-in;
 }
 .carousel-slide{
     position: absolute;
     top: 0em;
     bottom: 0em;
+    margin: 0%;
     width: 100%;
     height: 100%;
 }
@@ -141,6 +144,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px 0em;
+    margin: 0%;
 
 }
 .carousel_indicator{
@@ -151,11 +155,13 @@ body {
     background: black;
     background: rgba(0,0,0,.3);
     margin: 0 12px;
+    cursor: pointer;
 
 }
 .carousel_indicator.current-slide{
     background: rgba(0,0,0,.75);
 }
+.is-hidden{display: none;}
 .about-uni{
     display: flex;
     flex-direction: column;
@@ -236,15 +242,25 @@ video{
     border-radius: 1rem;
 }
 .boards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    
+    text-align: center;
+}
+.news h3{
+    display: block;
 }
 .news, .events{
+    
     background-color: #5089C6;
     padding: 1.5rem;
     margin: 1.7rem;
     border-radius: 2rem;
     height: 20em;
+    line-height: 1.5rem;
+}
+.news li, .events li{
+    margin: 2rem;
+
 }
 .news h3, .events h3{
     background-color: #035397;
@@ -408,6 +424,11 @@ video{
     }
     .copyrights{
         padding: 0.2rem;  
+    }
+    .video-board {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto ;
     }
       
 }

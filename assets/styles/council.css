@@ -22,11 +22,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #50C6BF;
+    background-color: #46bbb3;
     margin: 2rem;
     padding: 2rem;
     border-radius: 5em;
-    box-shadow: #001E6C 2px 2px 2px;
+    box-shadow:0px 5px 5px 2px  #03554f;
 }
 .box h3{
     color:black;
