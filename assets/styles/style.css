@@ -438,5 +438,10 @@ video{
     .news{
         width: 80%;
     }
+    video{
+        width: 340px;
+        height: 190px;
+
+    }
       
 }
