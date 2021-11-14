@@ -14,7 +14,7 @@ body {
     margin: auto;
     overflow-x: hidden;
 }
-.container{
+.whole div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,8 +254,11 @@ video{
 .news{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #5089C6;
-    padding: 1.5rem;
+    padding: 0rem;
     margin: 1.7rem;
     border-radius: 2rem;
     height: 20em;
