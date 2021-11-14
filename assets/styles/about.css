@@ -1,29 +1,57 @@
-@import 'style.css';
-.about-BU ,.vission ,.mission{
+@import "style.css";
+
+.card {
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+     margin: 3rem auto ;
+   }
+   
+.card-content {
      display: flex;
      flex-direction: row;
-     align-items: center;
-     justify-content: center;
-     padding: 2em;
-     /* margin: 2rem; */
+     place-items: center;
+   }
+.history-text,
+.vission-text,
+.mission-text {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.history-text , .vission-text ,.mission-text{
-     display: flexbox;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+ h1{
+  font-family: "Roboto Condensed", sans-serif;
+  color: #001e6c;
+  text-align: center;
+  margin: 1rem 
+}
+.history-text p,
+.vission-text ul,
+.mission-text ul {
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 2rem;
+  margin: 2rem;
+}
+.history-img,
+.mission-img,
+.vission-img {
+  background: transparent;
+  margin: 1rem;
+}
 
-}
-.history-text h1 , .vission-text h1, .mission-text h1{
-     font-family: 'Roboto Condensed', sans-serif;
-     color: #001E6C;
-     padding: 4rem;    
-}
-.history-text p , .vission-text ul,.mission-text ul{
-     font-family: 'Montserrat Alternates' ,sans-serif;
-     line-height: 2rem;
-     margin: 2rem;
-}
-.history-img, .mission-img, .vission-img{
-     background: transparent;
+
+
+@media  screen and (max-width : 850px) {
+     .card {
+      
+     }
+
+  .card-2 .card-content {
+       flex-direction: column-reverse;
+  }
+
+     .card-content {
+          flex-direction: column;
+     }
 }

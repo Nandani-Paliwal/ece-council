@@ -62,7 +62,7 @@ body {
 }
 .nav-li{
     list-style: none;
-    padding-left: 2rem;
+    padding: 0rem 1rem;
     font-family: 'Nunito Sans',sans-serif;
     font-size: 18px;  
     position: relative;  
@@ -159,8 +159,15 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1.7rem;
-    margin: 1.5rem;
+    margin: 5rem auto ;
     line-height: 1.5em;
+    border: 1px  grey;
+    box-shadow: 0px 5px 5px 2px grey ;
+    border-radius: 1rem;
+}
+.about-uni:hover{
+    transform: scale(102%);
+    transition: 0.5s;
 }
 .about-h{
     padding: 1.2rem;
@@ -172,27 +179,44 @@ body {
     font-family: 'Nunito Sans',sans-serif;
     line-height: 1.8rem;
     padding: 1.9em;
+    text-align: center;
 }
 .HOD{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border: 1px  grey;
+    box-shadow: 0px 5px 5px 2px grey ;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 .HOD img{
     border-radius: 10em;
     width:20%;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 5px 5px 2px grey ;
 }
 .HOD-text{
     font-family: 'Nunito Sans',sans-serif;
     color:#001EC6;
     line-height: 2rem;
     padding: 2rem;
+
+    margin: auto 1rem auto ;
+}
+
+.HOD:hover{
+    transform: scale(102%);
+    transition: 0.5s;
 }
 .HOD-text b{
     color:#FFAA4C
+}
+.video-board {
+    display: flex;
+    margin: 3rem auto ;
 }
 .vedio{
     display: flex;
@@ -202,18 +226,15 @@ body {
     padding: 2rem;
     margin: 2rem;
     border: none;
-   
-    /* width: 320px; */
-    /* height:240px; */
 }
 video{
-    box-shadow: grey 2px 2px 2px ;   
+
+    box-shadow: 0px 5px 5px 2px grey ;
+    border-radius: 1rem;
 }
 .boards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .news, .events{
     background-color: #5089C6;
@@ -238,9 +259,10 @@ video{
     padding: 1rem;
 }
 .facts h1{
-    
     padding: 1.2rem;
     font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
 }
 .stats{
     display: flex;
@@ -249,6 +271,9 @@ video{
     align-items: space-evenly;
 }
 .stats-box{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
     padding: 1.2em 2rem;
     color: white;
     font-family: 'Roboto',sans-serif;
@@ -259,7 +284,7 @@ video{
     justify-content: center;
     align-items: center;
     padding: 1.4rem 0 0 0;
-    margin: 0 0 0 0;
+    margin: 2rem auto ;
     border-radius: 2rem;
     background-color: #E6E6E6;
 }
@@ -276,7 +301,12 @@ video{
 }
 .link-con{
     padding: 2rem 3rem;  
-    
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.link-con li {
+    text-align: center;
 }
 .link-con a{
     list-style: none;
@@ -300,13 +330,8 @@ video{
 }
 .copyrights a{
     color: antiquewhite;
+    text-decoration: none;
 }
-
-
-
-
-
-
 
 
 @media screen and (max-width: 1130px) {

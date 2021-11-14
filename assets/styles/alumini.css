@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin:auto;
     /* position: absolute; */
 }
 .head{
@@ -12,18 +13,17 @@
     color: #001e6c;
     font-family: 'Roboto Condensed',sans-serif;
 }
+.review {
+    display:flex ;
+    flex-direction: column;
+    place-items: center;
+    margin: auto;
+}
 .box-e,.box-o{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    /* position: relative; */
-    /* width: 45rem; */
-    /* height: 10rem; */
-    /* top: 0em;
-    right: 0em;
-    bottom: 0em;
-    left:8em; */
     padding: 2rem;
     margin: 1rem;
     box-shadow: #001e6c  2px 2px 2px 2px;
