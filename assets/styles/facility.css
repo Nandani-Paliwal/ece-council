@@ -46,6 +46,7 @@
 }
 .img {
   padding: 2rem;
+  margin: 2rem;
 }
 .other a {
   text-decoration: none;
@@ -197,5 +198,15 @@
   .lab-cards-grid{
     display:grid;
     grid-template-columns: auto ;
+  }
+}
+@media  screen and (max-width : 850px){
+  .hostel-G{
+    display: flex;
+    flex-direction: column;
+  }
+  .hostel-B{
+    display: flex;
+    flex-direction:column-reverse;
   }
 }
