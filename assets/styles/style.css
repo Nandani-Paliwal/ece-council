@@ -247,16 +247,16 @@ video{
     border-radius: 1rem;
 }
 .boards{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     text-align: center;
 }
-.news{
+.news, .events{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #5089C6;
     padding: 0rem;
     margin: 1.7rem;
     border-radius: 2rem;
